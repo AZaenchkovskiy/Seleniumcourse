@@ -30,7 +30,7 @@ public class StepHolder extends AbstractStep {
     @Step
     public void loadPage(String pageName){
         try {
-            Thread.sleep(3000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

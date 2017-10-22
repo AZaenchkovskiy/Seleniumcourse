@@ -14,6 +14,7 @@ abstract class AbstractStep {
 
     @Before
     public void setup(){
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.get("http://www.yandex.ru");
